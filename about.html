@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Mic & Cam Studio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#C8A96B',
+            'gold-dark': '#9E7B43',
+            cream: '#FAF7F2',
+            blush: '#F7EFE8'
+          },
+          fontFamily: {
+            heading: ['Cormorant Garamond', 'serif'],
+            body: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .gold-gradient {
+      background: linear-gradient(to right, #C8A96B, #9E7B43);
+    }
+
+    .img-hover img {
+      transition: 0.5s ease;
+    }
+
+    .img-hover:hover img {
+      transform: scale(1.08);
+    }
+  </style>
+</head>
+
+<body class="bg-cream text-gray-800">
+
+  <!-- HERO SECTION -->
+  <section class="relative h-[75vh] flex items-center justify-center text-center overflow-hidden">
+
+<!-- Floating Back Button -->
+<a 
+    href="index.html"
+    class="fixed top-6 left-6 z-[999] flex items-center gap-2 bg-black/40 backdrop-blur-xl border border-white/20 text-white p-4 lg:px-5 lg:py-3 rounded-full shadow-2xl hover:bg-gold hover:border-gold hover:text-white transition-all duration-300"
+>
+    <i class="fas fa-arrow-left"></i>
+    <span class="hidden sm:block">Back</span>
+</a>
+    <img
+      src="Wedding photo/0001.jpg"
+      class="absolute inset-0 w-full h-full object-cover"
+      alt="Wedding"
+    >
+
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <div class="relative z-10 px-6 max-w-4xl text-white">
+
+      <p class="uppercase tracking-[6px] text-gold text-sm mb-4">
+        Mic & Cam Studio
+      </p>
+
+      <h1 class="font-heading text-5xl md:text-7xl font-semibold leading-tight mb-6">
+        About Us
+      </h1>
+
+      <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto">
+        We don’t just capture weddings — we preserve emotions, stories, traditions, and timeless memories with cinematic artistry.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+  <section class="py-24 px-6 bg-white">
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Images -->
+      <div class="grid grid-cols-2 gap-5">
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-2xl mt-10">
+          <img src="Wedding photo/0002.jpg" class="w-full h-[320px] object-cover">
+        </div>
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-2xl">
+          <img src="Wedding photo/0003.jpg" class="w-full h-[420px] object-cover">
+        </div>
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-2xl -mt-16">
+          <img src="Wedding photo/0004.jpg" class="w-full h-[420px] object-cover">
+        </div>
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-2xl">
+          <img src="Wedding photo/0005.jpg" class="w-full h-[320px] object-cover">
+        </div>
+
+      </div>
+
+      <!-- Content -->
+      <div>
+
+        <p class="uppercase tracking-[4px] text-gold text-sm mb-3">
+          Who We Are
+        </p>
+
+        <h2 class="font-heading text-5xl font-semibold leading-tight mb-8 text-gray-900">
+          Crafting Premium Wedding Stories With Passion
+        </h2>
+
+        <p class="text-gray-600 leading-relaxed text-lg mb-6">
+          At Mic & Cam Studio, we specialize in luxury wedding photography & cinematic films that beautifully preserve every emotion, tradition, and unforgettable moment.
+        </p>
+
+        <p class="text-gray-600 leading-relaxed text-lg mb-8">
+          From royal destination weddings to intimate ceremonies, our team captures your love story with elegance, creativity, and attention to every detail.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-6 mt-10">
+
+          <div class="bg-blush p-6 rounded-3xl shadow-md">
+            <div class="text-gold text-3xl mb-4">
+              <i class="fas fa-camera-retro"></i>
+            </div>
+            <h3 class="font-semibold text-xl mb-2">Luxury Photography</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Elegant wedding portraits & candid moments captured with premium aesthetics.
+            </p>
+          </div>
+
+          <div class="bg-blush p-6 rounded-3xl shadow-md">
+            <div class="text-gold text-3xl mb-4">
+              <i class="fas fa-film"></i>
+            </div>
+            <h3 class="font-semibold text-xl mb-2">Cinematic Films</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Emotional wedding films crafted with storytelling & cinematic visuals.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EXPERIENCE SECTION -->
+  <section class="py-24 px-6 bg-blush">
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Content -->
+      <div>
+
+        <p class="uppercase tracking-[4px] text-gold text-sm mb-3">
+          Why Choose Us
+        </p>
+
+        <h2 class="font-heading text-5xl font-semibold leading-tight mb-8 text-gray-900">
+          Turning Precious Moments Into Timeless Memories
+        </h2>
+
+        <div class="space-y-8">
+
+          <div class="flex gap-5">
+            <div class="w-14 h-14 rounded-full gold-gradient flex items-center justify-center text-white text-xl shrink-0">
+              <i class="fas fa-heart"></i>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">Emotional Storytelling</h3>
+              <p class="text-gray-600 leading-relaxed">
+                We focus on real emotions, candid moments, and authentic memories that truly reflect your story.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="w-14 h-14 rounded-full gold-gradient flex items-center justify-center text-white text-xl shrink-0">
+              <i class="fas fa-star"></i>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">Premium Experience</h3>
+              <p class="text-gray-600 leading-relaxed">
+                From planning to final delivery, we ensure a smooth and luxurious experience for every couple.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="w-14 h-14 rounded-full gold-gradient flex items-center justify-center text-white text-xl shrink-0">
+              <i class="fas fa-globe"></i>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">Destination Weddings</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Available across India for destination weddings, royal celebrations & intimate ceremonies.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Images -->
+      <div class="relative">
+
+        <div class="img-hover rounded-[40px] overflow-hidden shadow-2xl">
+          <img src="Wedding photo/0006.jpg" class="w-full h-[650px] object-cover">
+        </div>
+
+        <div class="absolute -bottom-10 -left-10 hidden md:block img-hover rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+          <img src="Wedding photo/0007.jpg" class="w-[260px] h-[320px] object-cover">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- STATS SECTION -->
+  <section class="py-24 px-6 bg-black text-white">
+
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+      <div>
+        <h3 class="font-heading text-6xl text-gold font-semibold mb-3">250+</h3>
+        <p class="uppercase tracking-[3px] text-sm text-gray-300">Weddings Covered</p>
+      </div>
+
+      <div>
+        <h3 class="font-heading text-6xl text-gold font-semibold mb-3">7+</h3>
+        <p class="uppercase tracking-[3px] text-sm text-gray-300">Years Experience</p>
+      </div>
+
+      <div>
+        <h3 class="font-heading text-6xl text-gold font-semibold mb-3">100%</h3>
+        <p class="uppercase tracking-[3px] text-sm text-gray-300">Client Satisfaction</p>
+      </div>
+
+      <div>
+        <h3 class="font-heading text-6xl text-gold font-semibold mb-3">Pan India</h3>
+        <p class="uppercase tracking-[3px] text-sm text-gray-300">Destination Coverage</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- GALLERY STRIP -->
+  <section class="py-20 px-6 bg-white">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-14">
+        <p class="uppercase tracking-[4px] text-gold text-sm mb-2">
+          Beautiful Memories
+        </p>
+
+        <h2 class="font-heading text-5xl font-semibold text-gray-900">
+          Behind The Lens
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-xl">
+          <img src="Wedding photo/0008.jpg" class="w-full h-[420px] object-cover">
+        </div>
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-xl lg:mt-10">
+          <img src="Wedding photo/0009.jpg" class="w-full h-[420px] object-cover">
+        </div>
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-xl">
+          <img src="Wedding photo/0010.jpg" class="w-full h-[420px] object-cover">
+        </div>
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-xl lg:mt-10">
+          <img src="Wedding photo/0011.jpg" class="w-full h-[420px] object-cover">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="py-24 px-6 bg-blush text-center">
+
+    <div class="max-w-4xl mx-auto">
+
+      <p class="uppercase tracking-[4px] text-gold text-sm mb-3">
+        Let’s Create Magic
+      </p>
+
+      <h2 class="font-heading text-5xl font-semibold mb-6 text-gray-900 leading-tight">
+        Ready To Capture Your Dream Wedding?
+      </h2>
+
+      <p class="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+        We’d love to be a part of your beautiful celebration and create timeless memories you’ll cherish forever.
+      </p>
+
+      <div class="flex justify-center gap-5 flex-wrap">
+<a href="contact.html" class="gold-gradient text-white px-8 py-4 rounded-full font-medium shadow-lg hover:scale-105 transition duration-300">
+          Book Now
+        </a>
+       
+ <a href="https://instagram.com/micandcamstudio" class="border border-gold px-8 py-4 rounded-full text-gold-dark hover:bg-gold hover:text-white transition duration-300">
+          Instagram
+        </a>
+        <a href="gallery.html" class="gold-gradient text-white px-8 py-4 rounded-full font-medium shadow-lg hover:scale-105 transition duration-300">
+         View Gallery
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+<footer class="bg-black text-white py-14 mt-6 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Brand -->
+        <div>
+
+            <div class="flex items-center gap-3 mb-5">
+
+                <!-- Logo -->
+                <div class="w-10 h-10 gold-gradient rounded-full flex items-center justify-center overflow-hidden shadow-md">
+                    <img 
+                        src="images/IMG_9077.PNG" 
+                        alt="Mic & Cam Studio Logo"
+                        class="w-full h-full object-cover"
+                    >
+                </div>
+
+                <!-- Brand Name -->
+                <span class="text-xl font-serif text-white">
+                    Mic & Cam Studio
+                </span>
+
+            </div>
+
+            <p class="text-sm text-gray-400 leading-relaxed">
+                Capturing timeless wedding memories with cinematic storytelling, luxury photography, and emotional moments.
+            </p>
+
+        </div>
+
+          <!-- Quick Links -->
+        <div>
+
+            <h5 class="font-semibold text-gold mb-5 text-lg">
+                Quick Links
+            </h5>
+
+            <ul class="space-y-3 text-sm text-gray-300">
+
+                <li>
+                    <a href="index.html" class="hover:text-gold transition">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="hover:text-gold transition">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="gallery.html" class="hover:text-gold transition">
+                        Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="hover:text-gold transition">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- Reach Us -->
+       <div>
+
+    <h5 class="font-semibold text-gold mb-4">
+        Reach Us
+    </h5>
+
+    <ul class="space-y-3 text-sm text-gray-300">
+
+        <!-- Location -->
+        <li>
+            <a 
+                href="https://maps.google.com/?q=Jaipur,Rajasthan"
+                target="_blank"
+                class="flex items-center gap-2 hover:text-gold transition"
+            >
+                <i class="fas fa-map-marker-alt"></i>
+                Jaipur, Rajasthan
+            </a>
+        </li>
+
+        <!-- Phone -->
+        <li>
+            <a 
+                href="tel:+919982050488"
+                class="flex items-center gap-2 hover:text-gold transition"
+            >
+                <i class="fas fa-phone-alt"></i>
+                +91 9982050488
+            </a>
+        </li>
+
+        <!-- Email -->
+        <li>
+            <a 
+                href="mailto:micandcamstudio1@gmail.com"
+                class="flex items-center gap-2 hover:text-gold transition break-all"
+            >
+                <i class="fas fa-envelope"></i>
+                micandcamstudio1@gmail.com
+            </a>
+        </li>
+
+        <!-- Instagram -->
+        <li>
+            <a 
+                href="https://instagram.com/micandcamstudio"
+                target="_blank"
+                class="flex items-center gap-2 hover:text-gold transition"
+            >
+                <i class="fab fa-instagram"></i>
+                @micandcamstudio
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+        <!-- Coverage -->
+        <div>
+
+            <h5 class="font-semibold text-gold mb-5 text-lg">
+                Coverage
+            </h5>
+
+            <p class="text-sm text-gray-300 leading-relaxed">
+                Pan India • Destination Weddings • Udaipur • Goa • Delhi • Mumbai • International Weddings
+            </p>
+
+        </div>
+
+      
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-gray-800 mt-12 pt-6 text-center text-gray-500 text-xs px-5">
+
+        © 2025 Mic & Cam Studio — Luxury Wedding Content Creator. All rights reserved.
+
+    </div>
+
+</footer>
+
+</body>
+</html>
+

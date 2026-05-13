@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Mic & Cam Studio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#C8A96B',
+            'gold-dark': '#9E7B43',
+            cream: '#FAF7F2',
+            blush: '#F7EFE8'
+          },
+          fontFamily: {
+            heading: ['Cormorant Garamond', 'serif'],
+            body: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .gold-gradient {
+      background: linear-gradient(to right, #C8A96B, #9E7B43);
+    }
+
+    .glass-card {
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.88);
+    }
+
+    .img-hover img {
+      transition: 0.5s ease;
+    }
+
+    .img-hover:hover img {
+      transform: scale(1.08);
+    }
+  </style>
+</head>
+
+<body class="bg-cream text-gray-800">
+
+  <!-- HERO -->
+  <section class="relative h-[75vh] flex items-center justify-center overflow-hidden text-center">
+<!-- Back Button -->
+<a 
+    href="index.html"
+    class="fixed top-6 left-6 z-[999] flex items-center gap-2 bg-black/40 backdrop-blur-xl border border-white/20 text-white p-4 lg:px-5 lg:py-3 rounded-full shadow-2xl hover:bg-gold hover:border-gold hover:text-white transition-all duration-300"
+>
+    <i class="fas fa-arrow-left"></i>
+    <span class="hidden sm:block">Back</span>
+</a>
+    <img
+      src="Wedding photo/0012.jpg"
+      class="absolute inset-0 w-full h-full object-cover"
+      alt="Wedding"
+    >
+
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <div class="relative z-10 px-6 max-w-4xl text-white">
+
+      <p class="uppercase tracking-[6px] text-gold text-sm mb-4">
+        Mic & Cam Studio
+      </p>
+
+      <h1 class="font-heading text-5xl md:text-7xl font-semibold leading-tight mb-6">
+        Contact Us
+      </h1>
+
+      <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto">
+        Let’s turn your wedding moments into timeless cinematic memories crafted with elegance and emotion.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT SECTION -->
+  <section class="py-16 px-5 bg-white relative overflow-hidden">
+
+    <div class="absolute top-0 right-0 opacity-15 pointer-events-none">
+      <img src="Wedding photo/0006.jpg" class="w-[400px] object-cover">
+    </div>
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+
+      <!-- LEFT CONTENT -->
+      <div class="px-2">
+
+        <p class="uppercase tracking-[4px] text-gold text-sm mb-3">
+          Get In Touch
+        </p>
+
+        <h2 class="font-heading text-5xl font-semibold leading-tight mb-8 text-gray-900">
+          Let’s Capture Your Beautiful Story
+        </h2>
+
+        <p class="text-gray-600 text-lg leading-relaxed mb-10">
+          Whether it’s an intimate celebration or a grand destination wedding, our team is ready to create cinematic memories you’ll cherish forever.
+        </p>
+
+
+        <!-- CONTACT INFO -->
+        <div class="space-y-6">
+
+          <a href="tel:+919982050488"
+   class="flex gap-5 items-start bg-blush p-6 rounded-3xl shadow-md hover:shadow-xl transition-all duration-300">
+
+  <div class="w-14 h-14 rounded-full gold-gradient flex items-center justify-center text-white text-xl shrink-0">
+    <i class="fas fa-phone-alt"></i>
+  </div>
+
+  <div>
+    <h3 class="text-xl font-semibold mb-1">Call Us</h3>
+    <p class="text-gray-600">+91 9982050488</p>
+  </div>
+
+</a>
+
+<a href="mailto:micandcamstudio1@gmail.com"
+   class="flex gap-5 items-start bg-blush p-6 rounded-3xl shadow-md hover:shadow-xl transition-all duration-300">
+
+  <div class="w-14 h-14 rounded-full gold-gradient flex items-center justify-center text-white text-xl shrink-0">
+    <i class="fas fa-envelope"></i>
+  </div>
+
+  <div>
+    <h3 class="text-xl font-semibold mb-1">Email Address</h3>
+    <p class="text-gray-600 break-all">micandcamstudio1@gmail.com</p>
+  </div>
+
+</a>
+
+          <div class="flex gap-5 items-start bg-blush p-6 rounded-3xl shadow-md">
+
+            <div class="w-14 h-14 rounded-full gold-gradient flex items-center justify-center text-white text-xl shrink-0">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-1">Location</h3>
+              <p class="text-gray-600">Jaipur, Rajasthan • Available Pan India</p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- SOCIAL -->
+        <div class="flex gap-4 mt-10 flex-wrap">
+
+          <a href="https://instagram.com/micandcamstudio" target="_blank" class="w-14 h-14 rounded-full border border-gold text-gold-dark flex items-center justify-center hover:bg-gold hover:text-white transition text-xl">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="https://wa.me/919982050488" target="_blank" class="w-14 h-14 rounded-full border border-gold text-gold-dark flex items-center justify-center hover:bg-gold hover:text-white transition text-xl">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <a href="#" class="w-14 h-14 rounded-full border border-gold text-gold-dark flex items-center justify-center hover:bg-gold hover:text-white transition text-xl">
+            <i class="fab fa-youtube"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- FORM -->
+      <div class="relative">
+
+        <div class="absolute -top-8 -left-8 hidden lg:block">
+          <img src="Wedding photo/0005.jpg" class="w-40 h-40 object-cover rounded-3xl shadow-2xl border-8 border-white">
+        </div>
+
+        <div class="glass-card p-6 md:p-10 rounded-[40px] shadow-2xl border border-gold/20 relative z-10">
+
+          <div class="mb-8">
+            <p class="uppercase tracking-[4px] text-gold text-sm mb-2">
+              Wedding Inquiry
+            </p>
+
+            <h3 class="font-heading text-4xl font-semibold text-gray-900">
+              Book Your Date
+            </h3>
+          </div>
+
+
+          <!-- FORM -->
+          <form action="https://formsubmit.co/micandcamstudio1@gmail.com" method="POST" class="space-y-5">
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://micandcamstudio.com/thankyou">
+
+            <div class="grid sm:grid-cols-2 gap-4">
+
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Your Name *"
+                class="w-full bg-white border border-gold/30 rounded-2xl p-4 focus:ring-2 focus:ring-gold outline-none transition"
+              >
+
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Email *"
+                class="w-full bg-white border border-gold/30 rounded-2xl p-4 focus:ring-2 focus:ring-gold outline-none transition"
+              >
+
+            </div>
+
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              class="w-full bg-white border border-gold/30 rounded-2xl p-4 focus:ring-2 focus:ring-gold outline-none transition"
+            >
+
+            <div class="grid sm:grid-cols-2 gap-4">
+
+              <input
+                type="date"
+                name="wedding_date"
+                id="weddingDate"
+                class="w-full bg-white border border-gold/30 rounded-2xl p-4 focus:ring-2 focus:ring-gold outline-none text-gray-500 transition"
+              >
+
+              <input
+                type="text"
+                name="budget"
+                placeholder="Your Budget"
+                class="w-full bg-white border border-gold/30 rounded-2xl p-4 focus:ring-2 focus:ring-gold outline-none transition"
+              >
+
+            </div>
+
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Tell us about your wedding plans..."
+              class="w-full bg-white border border-gold/30 rounded-2xl p-4 focus:ring-2 focus:ring-gold outline-none transition"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="w-full gold-gradient text-white py-4 rounded-2xl font-semibold text-lg shadow-lg hover:scale-[1.02] transition duration-300"
+            >
+              Send Inquiry →
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- IMAGE SHOWCASE -->
+  <section class="py-24 px-6 bg-blush overflow-hidden">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-14">
+
+        <p class="uppercase tracking-[4px] text-gold text-sm mb-2">
+          Beautiful Celebrations
+        </p>
+
+        <h2 class="font-heading text-5xl font-semibold text-gray-900">
+          Captured With Love
+        </h2>
+
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-2xl">
+          <img src="Wedding photo/0009.jpg" class="w-full h-[420px] object-cover">
+        </div>
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-2xl lg:mt-10">
+          <img src="Wedding photo/0010.jpg" class="w-full h-[420px] object-cover">
+        </div>
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-2xl">
+          <img src="Wedding photo/0011.jpg" class="w-full h-[420px] object-cover">
+        </div>
+
+        <div class="img-hover rounded-3xl overflow-hidden shadow-2xl lg:mt-10">
+          <img src="Wedding photo/0013.jpg" class="w-full h-[420px] object-cover">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+<footer class="bg-black text-white py-14 mt-6 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Brand -->
+        <div>
+
+            <div class="flex items-center gap-3 mb-5">
+
+                <!-- Logo -->
+                <div class="w-10 h-10 gold-gradient rounded-full flex items-center justify-center overflow-hidden shadow-md">
+                    <img 
+                        src="images/IMG_9077.PNG" 
+                        alt="Mic & Cam Studio Logo"
+                        class="w-full h-full object-cover"
+                    >
+                </div>
+
+                <!-- Brand Name -->
+                <span class="text-xl font-serif text-white">
+                    Mic & Cam Studio
+                </span>
+
+            </div>
+
+            <p class="text-sm text-gray-400 leading-relaxed">
+                Capturing timeless wedding memories with cinematic storytelling, luxury photography, and emotional moments.
+            </p>
+
+        </div>
+
+          <!-- Quick Links -->
+        <div>
+
+            <h5 class="font-semibold text-gold mb-5 text-lg">
+                Quick Links
+            </h5>
+
+            <ul class="space-y-3 text-sm text-gray-300">
+
+                <li>
+                    <a href="index.html" class="hover:text-gold transition">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="hover:text-gold transition">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="gallery.html" class="hover:text-gold transition">
+                        Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="hover:text-gold transition">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- Reach Us -->
+        <div>
+
+    <h5 class="font-semibold text-gold mb-4">
+        Reach Us
+    </h5>
+
+    <ul class="space-y-3 text-sm text-gray-300">
+
+        <!-- Location -->
+        <li>
+            <a 
+                href="https://maps.google.com/?q=Jaipur,Rajasthan"
+                target="_blank"
+                class="flex items-center gap-2 hover:text-gold transition"
+            >
+                <i class="fas fa-map-marker-alt"></i>
+                Jaipur, Rajasthan
+            </a>
+        </li>
+
+        <!-- Phone -->
+        <li>
+            <a 
+                href="tel:+919982050488"
+                class="flex items-center gap-2 hover:text-gold transition"
+            >
+                <i class="fas fa-phone-alt"></i>
+                +91 9982050488
+            </a>
+        </li>
+
+        <!-- Email -->
+        <li>
+            <a 
+                href="mailto:micandcamstudio1@gmail.com"
+                class="flex items-center gap-2 hover:text-gold transition break-all"
+            >
+                <i class="fas fa-envelope"></i>
+                micandcamstudio1@gmail.com
+            </a>
+        </li>
+
+        <!-- Instagram -->
+        <li>
+            <a 
+                href="https://instagram.com/micandcamstudio"
+                target="_blank"
+                class="flex items-center gap-2 hover:text-gold transition"
+            >
+                <i class="fab fa-instagram"></i>
+                @micandcamstudio
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+        <!-- Coverage -->
+        <div>
+
+            <h5 class="font-semibold text-gold mb-5 text-lg">
+                Coverage
+            </h5>
+
+            <p class="text-sm text-gray-300 leading-relaxed">
+                Pan India • Destination Weddings • Udaipur • Goa • Delhi • Mumbai • International Weddings
+            </p>
+
+        </div>
+
+      
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-gray-800 mt-12 pt-6 text-center text-gray-500 text-xs px-5">
+
+        © 2025 Mic & Cam Studio — Luxury Wedding Content Creator. All rights reserved.
+
+    </div>
+
+</footer>
+
+
+  <!-- DATE SCRIPT -->
+  <script>
+    document.getElementById('weddingDate').min = new Date().toISOString().split('T')[0];
+  </script>
+
+</body>
+</html>
+
